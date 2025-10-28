@@ -1,25 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My CI/CD Demo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CI/CD Web Page</title>
   <style>
     body {
-      background-color: #eaf6f6;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      color: #fff;
       text-align: center;
-      padding-top: 100px;
+      overflow: hidden;
     }
+
     h1 {
-      color: #1b4965;
+      font-size: 48px;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      animation: fadeInDown 1.5s ease;
     }
+
     p {
-      font-size: 18px;
-      color: #4f4f4f;
+      font-size: 20px;
+      margin-top: 10px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 16px;
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
-  <h1>Hello from CI/CD Pipeline!</h1>
-  <p>This page is automatically deployed using GitHub Pages.</p>
+  <h1>🚀 My CI/CD Web Page is Live!</h1>
+  <p>Deployed automatically using GitHub Pages</p>
+  <footer>Created by ELANGAVIN 🌐</footer>
 </body>
 </html>
